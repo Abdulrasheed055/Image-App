@@ -1,0 +1,138 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bigelow Rules', cursive;
+    box-sizing: border-box;
+    
+
+}
+ body{
+    line-height: 1.6;
+    
+
+ }
+ h1{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 60px 0;
+ }
+ form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+ }
+ /*style input*/
+ #search-input{
+    width:60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    box-shadow:  0 0 6px rgba(0, 0 ,0 ,0.2);
+    border-radius: 5px;
+    color:#333;
+    outline: none;
+   
+   
+ }
+
+ /*w
+ /*button*/
+ #search-button{
+    font-size: 18px;
+    box-shadow:  0 0 6px rgba(0, 0 ,0 ,0.2);
+    border-radius:5px;
+    border: none;
+    border-radius: 5px;
+    color:#ffff;
+    background-color: #138065;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+
+ }
+/*we want  imag in  row*/
+ .search-results{
+ display:flex;
+ justify-content:space-between;
+ flex-wrap:wrap; 
+ max-width: 1200px;
+ margin: 0 auto;
+ }
+ .search-result{
+   margin-bottom: 60px;
+   width: 30%;
+   height:100%;
+   border-radius:5px;
+   box-shadow:  0 0 6px rgba(0, 0 ,0 ,0.2);
+   overflow: hidden;
+ }
+ /*target image*/
+ .search-result img{
+   width: 100%;
+   height: 230px;
+   object-fit: cover;
+   transition: opacity 0.2s ease-in-out;
+ }
+
+.search-result:hover img{
+opacity: 0.8;
+}
+.search-result a{
+ font-size: 20px;
+ text-decoration: none;
+ color: #333;
+ padding: 10px;
+ display: block;
+ text-transform:capitalize;
+}
+#show-more{
+   font-size: 18px;
+   text-align: center;
+   border-radius: 5px;
+   border: none;
+    border-radius: 5px;
+   color:#ffff;
+   background-color: #138065;
+   padding: 10px 20px;
+   cursor: pointer;
+   display: none;   /*it is important is it move our button to center*/
+   margin: 30px auto;
+}
+.detail{
+   padding: 20px;
+   background-color: #138065;
+   bottom: 0;
+   text-align: center;
+   color: #fff;
+   max-width: 230%;
+   text-shadow: 0.2px 0.2px ;
+   font-style: italic;
+   font-size: 20px;
+
+
+}
+
+
+/*reponsive  for tablet*/
+@media screen  and (max-width:768px) {
+   .search-result{
+      width: 45%;  
+   }
+   .search-results{
+      padding: 20px;
+   }
+   
+}
+
+/*reponsive  for phone*/
+
+@media screen  and (max-width:480px) {
+   .search-result{
+      width: 100%;  
+   }
+   
+}
